@@ -1,0 +1,36 @@
+.main-container
+{
+  
+        height: 1000px;
+        background-color: white; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right,rgb(120, 145, 203) , rgb(223, 62, 157));
+      
+}
+
+.mainwel
+{
+    
+    margin-bottom: 0%;
+}
+.mainwel h2{
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+  }
+
+form{
+
+    display: block;
+    
+    background-color: rgba(205, 186, 231, 0.664);
+    margin:-6px 30% 0% 30%;
+    padding: 2% 10% 2% 10%;
+}

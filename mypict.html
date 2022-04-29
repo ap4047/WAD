@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h2 class="navbar-brand brand-name">
+                <a href="index.html"><img class="img-responsive2" src="images/clg logo.png"></a>
+            </h2>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admission</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Departments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Computer Department</a></li>
+                            <li><a class="dropdown-item" href="#"> Informartion Technology Department</a></li>
+                            <li><a class="dropdown-item" href="#"> Electronics and Telecommunication Department</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Training and Placement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mypict.html">My Pict</a>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="row" >
+      <button class="col-6 "onclick="showOrHideDiv()">Click The Button</button>
+        <div class="col-6  text-light bg-my float-end justify-content-end" id= "ashish">
+            <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                  <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-5 fw-semibold">Student Section</span>
+                </a>
+                <ul class="list-unstyled ps-0">
+                 
+                  <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                      Dashboard
+                    </button>
+                    <div class="collapse" id="dashboard-collapse" style="">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class=" nav-link link-dark rounded">Profile</a></li>
+                        <li><a href="signup.html" class="nav-link link-dark rounded">Register</a></li>
+                        <li><a href="signin.html" class="nav-link link-dark rounded">Log In</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Annually</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                      Events
+                    </button>
+                    <div class="collapse" id="orders-collapse" style="">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="nav-link link-dark rounded">New</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Returned</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="border-top my-3"></li>
+                  <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                      Account
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="nav-link link-dark rounded">New...</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="nav-link link-dark rounded">Sign out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

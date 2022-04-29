@@ -1,0 +1,20 @@
+body{
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,rgb(120, 145, 203) , rgb(223, 62, 157));
+  
+}
+.bg-my{
+    
+    background-color: rgba(205, 186, 231, 0.664);
+}
+
+    .img-responsive2{
+        height:47px;
+        width:50px;
+        border-radius: 50%;
+    }
+
+.carousel-item img{
+
+    height:400px;
+}
